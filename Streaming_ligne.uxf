@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>290</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Utilisateur
+--
+- nom : String
+- numérosCompte : String
+--
++ toString() : String
++ getters
++ setters
++ estPremium() : void
++ beneficieReduction() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>80</y>
+      <w>240</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>/Banque/
+--
+- donneesBancaire : String
+- numérosCompteBanciare : String
+- dateBancaire : String
+- cryptogramme : Integer
+--
++ toString() : String
++ getters
++ setters
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>250</y>
+      <w>100</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>m1=0..*
+m2=1
+premium</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0;80.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>630</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Film
+--
+- titre : String
+- dateSortie : Date
+--
++ toString() : String
++ getters
++ setters</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>290</y>
+      <w>250</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Playlist
+--
+- nom : String
+- numérosCompte : String
+--
++ toString() : String
++ getters
++ setters
++ afficheSelonUser() : void
++ estDansLaPlaylist() : void
++ supprimeSiFini() : void
++ retourneLes5DerniersVue() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>630</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Famille
+--
+
+--
++ toString() : String
++ getters
++ setters
++ reduction() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>430</y>
+      <w>50</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=0..5</panel_attributes>
+    <additional_attributes>10.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>480</y>
+      <w>90</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>m1=0..*
+m2=0..*
+contient v</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>350</y>
+      <w>280</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>610</x>
+      <y>190</y>
+      <w>310</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>PLAYLIST bénéficie de estPremium() de USER
+permettra d'ajouter 1 ou plusieurs film 
+dans celle-ci
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1210</x>
+      <y>320</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Acteur
+--
+- nom : String
+- prenom : String
+--
++ toString() : String
++ getters
++ setters</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1020</x>
+      <y>370</y>
+      <w>210</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=0..*
+apparait v</panel_attributes>
+    <additional_attributes>10.0;320.0;120.0;320.0;120.0;10.0;190.0;10.0</additional_attributes>
+  </element>
+</diagram>
