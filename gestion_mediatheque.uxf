@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>632</x>
+      <y>592</y>
+      <w>168</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>/Document/
+--
+- numeroDocument : String
+- titre : String
+- auteur : String
+- dateSortie : Date
+- cote : String
+- rayon : String
+--
++ ctor/getters/setters
++ consultable() : Boolean
++ empruntable() : Boolean
++ ranger() : Boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>624</x>
+      <y>848</y>
+      <w>176</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Journal
+--
+- id : Long
+--
++ ctor/getters/setters</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>408</x>
+      <y>848</y>
+      <w>176</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Livre
+--
+- id : Long
+--
++ ctor/getters/setters</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>848</x>
+      <y>848</y>
+      <w>176</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Blueray
+--
+- id : Long
+- montantCaution: double
+--
++ ctor/getters/setters</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>752</y>
+      <w>24</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>488</x>
+      <y>792</y>
+      <w>472</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;70.0;10.0;20.0;570.0;20.0;570.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>632</x>
+      <y>72</y>
+      <w>176</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>/Personne/
+--
+- nom : String
+- prenom : String
+- dateNaissance : Date
+- adresse : String
+- codePostal : String
+- commun : String
+--
++ ctor/getters/setters
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>376</x>
+      <y>64</y>
+      <w>176</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;INTERFACE&gt;&gt;
+/Adherent/
+--
++ carteLecteur() : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>392</x>
+      <y>304</y>
+      <w>176</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Client
+--
+- id : Long
+--
++ ctor/getters/setters</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>632</x>
+      <y>304</y>
+      <w>176</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Employe
+--
+- id : Long
+--
++ ctor/getters/setters</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>224</y>
+      <w>24</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>224</y>
+      <w>208</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;60.0;240.0;60.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>792</x>
+      <y>456</y>
+      <w>216</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Traitement
+--
+- dateOperation: date
+--
++ enregistrement(Document) : Document
++ suppression() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>408</y>
+      <w>64</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>m1=0..1
+m2=0..*
+gérer v</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>504</y>
+      <w>112</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>344</y>
+      <w>216</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>Emprunt
+--
+- numeroEmprunt : String
+- dateEmprunt : DateTime
+- caution : Integer
+- typeCaution : String
+--
++ enregistrement(numeroEmprunt) : String
++ demandeRetour(dateEmprunt) : String
++ calculCaution(Document) : Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>152</y>
+      <w>280</w>
+      <h>552</h>
+    </coordinates>
+    <panel_attributes>m1=0..5
+m2=0..1</panel_attributes>
+    <additional_attributes>10.0;660.0;330.0;660.0;330.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1048</x>
+      <y>408</y>
+      <w>120</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>544</x>
+      <y>112</y>
+      <w>104</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>848</x>
+      <y>304</y>
+      <w>176</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Benevole
+--
+- id : Long
+--
++ ctor/getters/setters</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>752</x>
+      <y>224</y>
+      <w>200</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;230.0;60.0;230.0;100.0</additional_attributes>
+  </element>
+</diagram>
